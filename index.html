@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerup Moto - Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /* Set the background image using a relative path */
+      background: url('images/homepage_background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      text-align: center;
+    }
+    /* Company logo style: positioned at the top right */
+    header.logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    header.logo img {
+      width: 150px; /* Adjust the size as necessary */
+    }
+    /* The container for the main content with a semi-transparent background */
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 50px;
+      margin: 100px auto 0; /* Centered with a top margin to leave room for the logo */
+      display: inline-block;
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .button a {
+      text-decoration: none;
+      background: #ff5722;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+    .button a:hover {
+      background: #e64a19;
+    }
+    /* WhatsApp icon styling: fixed at the bottom right */
+    .whatsapp-icon {
+      position: fixed;
+      bottom: 60px;
+      right: 60px;
+      z-index: 1000;
+    }
+    .whatsapp-icon img {
+      width: 60px; /* Reduced icon size */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header section with company logo -->
+  <header class="logo">
+    <img src="images/company_logo.png" alt="Company Logo">
+  </header>
+
+  <!-- Main content container -->
+  <div class="container">
+    <h1>Lets Gear up Your Moto !</h1>
+    <p>Hassle free place to fix all issues related to your Two wheeler</p>
+    <div class="button">
+      <a href="service.html">Book a Service Online</a>
+    </div>
+  </div>
+
+  <!-- WhatsApp Icon -->
+  <div class="whatsapp-icon">
+    <a href="https://wa.me/8007196649" target="_blank">
+      <img src="images/whatsapp.png" alt="Chat on WhatsApp">
+    </a>
+  </div>
+
+</body>
+</html>

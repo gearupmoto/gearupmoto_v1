@@ -14,7 +14,7 @@
       margin: 0;
       padding: 0;
       background: url('images/homepage_background.png') no-repeat center center fixed;
-      background-size: contain; /* Prevent oversized background on mobile */
+      background-size: cover; /* Prevent oversized background on mobile */
       font-family: Arial, sans-serif;
       color: #ffffff;
       text-align: center;
@@ -22,11 +22,12 @@
 
     /* Logo */
     .logo img {
-      width: 150px;
+      width: 100px; /* Smaller logo */
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 10px;
+      left: 10px; /* Adjusted position for mobile */
     }
+
 
     /* Centered container */
     .container {
@@ -47,7 +48,8 @@
       font-size: 5vw; /* Responsive text size */
     }
     p {
-      font-size: 18px;
+      font-size: 16px;
+      font-style: italic;
     }
 
     /* Button styling */

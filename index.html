@@ -8,50 +8,44 @@
     body {
       margin: 0;
       padding: 0;
-      /* Set the background image using a relative path */
       background: url('images/homepage_background.png') no-repeat center center fixed;
       background-size: cover;
       font-family: Arial, sans-serif;
       color: #ffffff;
       text-align: center;
     }
-    /* Company logo style: positioned at the top right */
     header.logo {
       position: absolute;
       top: 20px;
       right: 20px;
     }
     header.logo img {
-      width: 150px; /* Adjust the size as necessary */
+      width: 150px;
     }
-    /* The container for the main content with a semi-transparent background */
     .container {
       background: rgba(0, 0, 0, 0.6);
       padding: 50px;
-      margin: 100px auto 0; /* Centered with a top margin to leave room for the logo */
+      margin: 100px auto 0;
       display: inline-block;
       border-radius: 8px;
     }
     h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+      font-size: 6vw; /* Responsive text */
     }
     p {
       font-size: 20px;
-      margin-bottom: 30px;
     }
     .button a {
       text-decoration: none;
       background: #ff5722;
       color: #fff;
-      padding: 15px 30px;
+      padding: 20px 40px;
       border-radius: 5px;
-      font-size: 18px;
+      font-size: 20px; /* Touch-friendly */
     }
     .button a:hover {
       background: #e64a19;
     }
-    /* WhatsApp icon styling: fixed at the bottom right */
     .whatsapp-icon {
       position: fixed;
       bottom: 60px;
@@ -59,27 +53,41 @@
       z-index: 1000;
     }
     .whatsapp-icon img {
-      width: 60px; /* Reduced icon size */
+      width: 60px;
       height: auto;
+    }
+    @media (max-width: 768px) {
+      .logo img {
+        width: 100px;
+        top: 10px;
+        right: 10px;
+      }
+      .whatsapp-icon {
+        bottom: 20px;
+        right: 20px;
+      }
+      .container {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Header section with company logo -->
   <header class="logo">
     <img src="images/company_logo.png" alt="Company Logo">
   </header>
 
-  <!-- Main content container -->
   <div class="container">
-    <h1>Lets Gear up Your Moto !</h1>
-    <p>Your One-Stop Hub for Hassle-Free Two-Wheeler Care.</p>
+    <h1>Let's Gear up Your Moto!</h1>
+    <p>Your One-Stop Hub for Hassle-Free Two-Wheeler Servicing.</p>
+    <p>Contact Us : +9175996649(Whatsapp)</p>
+    <p>We are operating in and around : Magarpatta,Hadapsar,Kharadi,Wadgaon Sheri,KP,Kalyani Nagar</p>
+    <p>.                    </p>
     <div class="button">
       <a href="service.html">Book a Service Online</a>
     </div>
   </div>
 
-  <!-- WhatsApp Icon -->
   <div class="whatsapp-icon">
     <a href="https://wa.me/9175996649" target="_blank">
       <img src="images/whatsapp.png" alt="Chat on WhatsApp">

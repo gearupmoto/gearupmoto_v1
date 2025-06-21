@@ -25,7 +25,7 @@
       width: 100px; /* Smaller logo */
       position: absolute;
       top: 30px;
-      left: 55%; /* Adjusted position for mobile */
+      left: 47%; /* Adjusted position for mobile */
     }
 
 
@@ -82,8 +82,8 @@
     @media (max-width: 768px) {
       .logo img {
         width: 100px;
-        margin-left: 10px;
-        margin-top: 10px;
+        top: 10px;
+        right: 10px;
       }
       .container {
         width: 95%;
@@ -110,42 +110,25 @@
     <img src="images/company_logo.png" alt="Company Logo">
   </header>
 
-<!-- Main content -->
-<div class="container">
+  <!-- Main content -->
+  <div class="container">
     <h1>Let's Gear up Your Moto!</h1>
     <p>Your One-Stop Hub for Hassle-Free Two-Wheeler Servicing.</p>
-    
     <p>Contact Us: +9175996649 (WhatsApp)</p>
-    
-    <!-- Chat Button -->
-    <button style="background-color: #4CAF50; color: white; padding: 12px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; margin-bottom: 10px;"
-    onclick="window.location.href='https://wa.me/9175996649';">
-    Chat with us 
-    </button>
-
-<!-- Book Servicing Button -->
-    <button style="background-color: #2196F3; color: white; padding: 12px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;"
-    onclick="window.location.href='https://wa.me/9175996649';">
-    Book servicing
-    </button>
-
-    <br> <!-- Adds a bslank line -->
-
-    <p>Follow us on Insta: 
-    <a href="https://www.instagram.com/gearupmoto2025" target="_blank" style="text-decoration: none; color: #E4405F; font-weight: bold;">@gearupmoto2025</a>
-    </p>
-
     <p>We operate in and around: Magarpatta, Hadapsar, Kharadi, Wadgaon Sheri, KP, Kalyani Nagar</p>
-</div>
 
-<!-- WhatsApp Chat Icon -->
-<div class="whatsapp-icon">
+    <!-- Button for service -->
+    <div class="button">
+      <a href="service.html">Book a Service Online</a>
+    </div>
+  </div>
+
+  <!-- WhatsApp Chat Icon -->
+  <div class="whatsapp-icon">
     <a href="https://wa.me/9175996649" target="_blank">
       <img src="images/whatsapp.png" alt="Chat on WhatsApp">
     </a>
-</div>
-
-
+  </div>
 
 </body>
 </html>
